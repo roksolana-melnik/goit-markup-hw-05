@@ -485,8 +485,120 @@
             </li>
           </ul>
         </div>
+        <div class="subscription-container">
+          <p class="subscription-title">Subscribe</p>
+          <form class="subscription-frames">
+            <label class="subscription-field" for="user-email">
+              <input
+                class="subscription-text-field"
+                type="email"
+                id="user-email"
+                name="user-email"
+                placeholder="E-mail"
+              />
+            </label>
+            <button type="send" class="subscription-button">
+              Subscribe
+              <svg class="send-icon-btn" width="24px" height="24px">
+                <use href="./images/icons.svg#icon-iconsend"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <!-- #endregion footer -->
+
+    <!-- #region popup -->
+    <div class="backdrop is-open">
+      <!-- is-open -->
+      <div class="popup-review">
+        <button class="close-popup">
+          <svg class="close-button" width="8px" height="8px">
+            <use href="./images/icons.svg#icon-closebutton"></use>
+          </svg>
+        </button>
+        <p class="leave-review-description">
+          Leave your contacts and we will call you back
+        </p>
+        <form>
+          <div class="field-wrapper">
+            <label class="label-field" for="user-name">Name</label>
+            <div class="field-wrapper-inner">
+              <input
+                class="text-field"
+                type="text"
+                id="user-name"
+                name="user-name"
+                required
+              />
+              <svg class="input-icon" width="18px" height="24px">
+                <use href="./images/icons.svg#icon-personbutton"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="field-wrapper">
+            <label class="label-field" for="user-phone">Phone</label>
+            <div class="field-wrapper-inner">
+              <input
+                class="text-field"
+                type="tel"
+                id="user-phone"
+                name="user-phone"
+              />
+              <svg class="input-icon" width="18px" height="24px">
+                <use href="./images/icons.svg#icon-phonebutton"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="field-wrapper">
+            <label class="label-field" for="user-email">Email</label>
+            <div class="field-wrapper-inner">
+              <input
+                class="text-field"
+                type="email"
+                id="user-email"
+                name="user-email"
+                required
+              />
+              <svg class="input-icon" width="18px" height="24px">
+                <use href="./images/icons.svg#icon-emailbutton"></use>
+              </svg>
+            </div>
+          </div>
+          <div>
+            <label class="label-field" for="user-comment">Comment</label>
+            <textarea
+              class="comment-field"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Text input"
+              required
+            ></textarea>
+          </div>
+          <div class="checkbox-field">
+            <input
+              type="checkbox"
+              id="user-terms"
+              name="user-terms"
+              value="true"
+              required
+              class="input-checkbox visually-hidden"
+            />
+            <label for="user-terms" class="terms-field">
+              <span class="custom-checkbox">
+                <svg class="check-icon" width="10px" height="8px">
+                  <use href="./images/icons.svg#icon-vectorbutton"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a href="#" class="privacy-link">Privacy Policy</a></label
+            >
+          </div>
+          <button type="submit" class="submit-button">Send</button>
+        </form>
+      </div>
+    </div>
+    <!-- #endregion popup -->
   </body>
 </html>
